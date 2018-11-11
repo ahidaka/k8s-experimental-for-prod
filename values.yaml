@@ -5,9 +5,11 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
+  registry: mvphackprod.azurecr.io
+  repository: mvphackprod.azurecr.io/api
+  tag: latest
   pullPolicy: IfNotPresent
+  pullSecrets: acr-mvphack
 
 nameOverride: ""
 fullnameOverride: ""
